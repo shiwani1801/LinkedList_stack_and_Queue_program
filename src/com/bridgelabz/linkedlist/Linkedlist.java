@@ -39,6 +39,16 @@ public class Linkedlist<T> {
         }
     }
     /**
+     * Method to insert a newnode after given node  to linkedlist
+     */
+
+    public void insertAfter(Node<T> prevNode, T key) {
+        Node<T> newNode = new Node<T>();
+        newNode.key = key;
+        newNode.next = prevNode.next;
+        prevNode.next = newNode;
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {

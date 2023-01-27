@@ -6,6 +6,7 @@ public class LinkedListMain {
         createSimpleLinkedList();
         addingElements();
         appendingTheElements();
+        insertingData();
     }
 
     public static void createSimpleLinkedList() {
@@ -63,5 +64,24 @@ public class LinkedListMain {
         linkedlist3.Display();
         System.out.println("**********************************************************************");
     }
+    public static void insertingData() {
+        System.out.println("\n=================UC4==================");
+
+        Linkedlist<Integer> linkedlist4 = new Linkedlist<>();
+        linkedlist4.append(56);
+        System.out.println("after append 56");
+        linkedlist4.Display();
+        linkedlist4.append(70);
+        System.out.println("after append 70");
+        linkedlist4.Display();
+        System.out.println("Before inserting the elements are=");
+        linkedlist4.Display();
+        linkedlist4.insertAfter(linkedlist4.head, 30);
+        System.out.println("inserting 30 between 56 and 70");
+        linkedlist4.Display();
+        System.out.println("**********************************************************************");
+
+    }
+
 
 }
