@@ -1,5 +1,6 @@
 package com.bridgelabz.linkedlist;
 
+
 public class LinkedListMain {
     public static void main(String[] args) {
 
@@ -9,6 +10,8 @@ public class LinkedListMain {
         insertingData();
         popFirstData();
         popLastData();
+        searchNode();
+        insertingAfterElement();
     }
 
     public static void createSimpleLinkedList() {
@@ -141,7 +144,20 @@ public class LinkedListMain {
         linkedlist7.Display();
         System.out.println("**********************************************************************");
     }
+    public static void insertingAfterElement() {
+        System.out.println("\n==========================================UC8===================================\n");
 
+        Linkedlist<Integer> linkedlist8 = new Linkedlist<>();
+        linkedlist8.append(56);
+        linkedlist8.append(30);
+        linkedlist8.append(70);
+        System.out.println("the data is : ");
+        linkedlist8.Display();// using the output of appendingTheElements method
+        linkedlist8.insert(1, 40);
+        System.out.println("\nRequired output is : 56->30->40->70 \nthe index of value 30 is 1...so after inserting 40 at index 2 we get the list as :  ");
+        linkedlist8.Display();
+        System.out.println("**********************************************************************");
 
+    }
 
 }

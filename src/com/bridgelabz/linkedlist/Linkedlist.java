@@ -85,6 +85,19 @@ public class Linkedlist<T> {
         return tempNode;
     }
     /**
+     * Method to insert the node at given position to linkedlist
+     */
+    public void insert(int index, T key) {
+        Node<T> node = new Node();
+        node.key = key;
+        Node temp = head;
+        for (int i = 0; i < index - 1; i++) {
+            temp = temp.next;
+        }
+        node.next = temp.next;
+        temp.next = node;
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {
@@ -95,6 +108,5 @@ public class Linkedlist<T> {
         }
         System.out.println();
     }
-
 
 }
