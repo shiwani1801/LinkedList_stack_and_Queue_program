@@ -98,6 +98,37 @@ public class Linkedlist<T> {
         temp.next = node;
     }
     /**
+     * Method to delete  node form given position to linkedlist
+     */
+    public void deleteNode(T key)
+    {
+        Node<T> tempNode = search(key);
+        Node<T> prevNode = head;
+        while(prevNode!= null)
+        {
+            if(prevNode == tempNode){
+                head= tempNode.next;
+                break;
+            }else if(prevNode.next==tempNode){
+                prevNode.next = tempNode.next;
+                tempNode.next=null;
+            }prevNode=prevNode.next;
+        }
+    }
+    /**
+     * Method to calculate count of node in linkedlist
+     */
+    public void size() {
+        Node<T> tempNode = head;
+        int count = 0;
+        while (tempNode != null) {
+            count++;
+            tempNode = tempNode.next;
+        }
+        System.out.println("Size of the linked list is: " + count);
+    }
+
+    /**
      * Method to display the linkedlist
      */
     public void Display () {
@@ -108,5 +139,6 @@ public class Linkedlist<T> {
         }
         System.out.println();
     }
+
 
 }
