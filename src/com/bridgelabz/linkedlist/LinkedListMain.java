@@ -8,6 +8,7 @@ public class LinkedListMain {
         appendingTheElements();
         insertingData();
         popFirstData();
+        popLastData();
     }
 
     public static void createSimpleLinkedList() {
@@ -27,6 +28,7 @@ public class LinkedListMain {
         linkedlist1.Display();
         System.out.println("***************************************************************");
     }
+
     public static void addingElements() {
         System.out.println("\n==============================UC2============================");
 
@@ -47,6 +49,7 @@ public class LinkedListMain {
         linkedlist2.Display();
         System.out.println("********************************************************************");
     }
+
     public static void appendingTheElements() { // new element gets added at the end
         System.out.println("\n==============================UC3============================");
         Linkedlist<Integer> linkedlist3 = new Linkedlist<>();
@@ -65,6 +68,7 @@ public class LinkedListMain {
         linkedlist3.Display();
         System.out.println("**********************************************************************");
     }
+
     public static void insertingData() {
         System.out.println("\n=================UC4==================");
 
@@ -83,6 +87,7 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
 
     }
+
     public static void popFirstData() {//input 56,30,70
         System.out.println("================== UC5 ==================");
 
@@ -104,6 +109,28 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
     }
 
+    public static void popLastData() {//input 56,30,70
+        System.out.println("================== UC6==================");
 
+        Linkedlist<Integer> linkedlist6 = new Linkedlist<>();
+        linkedlist6.append(56);
+        System.out.println("after append 56");
+        linkedlist6.Display();
+        linkedlist6.append(30);
+        System.out.println("after append 30");
+        linkedlist6.Display();
+        linkedlist6.append(70);
+        System.out.println("after append 70");
+        linkedlist6.Display();
 
+        System.out.println("data is : ");
+        linkedlist6.Display();
+
+        System.out.println("required output sequence (after deleting last element ) ==> 56,30");
+        System.out.println("Pop value is : " + linkedlist6.popLast());
+        System.out.println("after deleting it shows");
+        linkedlist6.Display();
+
+        System.out.println("**********************************************************************");
+    }
 }

@@ -60,6 +60,17 @@ public class Linkedlist<T> {
         return tempNode.key;
     }
     /**
+     * Method to delete last node from linkedlist
+     */
+    public T popLast() {
+        Node<T> tempNode = head;
+        while (tempNode.next.next != null) {
+            tempNode = tempNode.next;
+        }
+        tempNode.next = null;
+        return tempNode.key;
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {
