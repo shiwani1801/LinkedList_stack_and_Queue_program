@@ -11,7 +11,9 @@ public class LinkedListMain {
         searchNode();
         insertingAfterElement();
         deleteAndShowSize();
+        sortAccendingOrder();
     }
+
     public static void createSimpleLinkedList() {
         System.out.println("\n\n===================UC1=====================\n");
 
@@ -29,6 +31,7 @@ public class LinkedListMain {
         linkedlist1.Display();
         System.out.println("***************************************************************");
     }
+
     public static void addingElements() {
         System.out.println("\n==============================UC2============================");
 
@@ -49,6 +52,7 @@ public class LinkedListMain {
         linkedlist2.Display();
         System.out.println("********************************************************************");
     }
+
     public static void appendingTheElements() { // new element gets added at the end
         System.out.println("\n==============================UC3============================");
         Linkedlist<Integer> linkedlist3 = new Linkedlist<>();
@@ -67,6 +71,7 @@ public class LinkedListMain {
         linkedlist3.Display();
         System.out.println("**********************************************************************");
     }
+
     public static void insertingData() {
         System.out.println("\n=================UC4==================");
 
@@ -85,6 +90,7 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
 
     }
+
     public static void popFirstData() {//input 56,30,70
         System.out.println("================== UC5 ==================");
 
@@ -105,6 +111,7 @@ public class LinkedListMain {
         linkedlist5.Display();
         System.out.println("**********************************************************************");
     }
+
     public static void popLastData() {//input 56,30,70
         System.out.println("================== UC6==================");
 
@@ -129,6 +136,7 @@ public class LinkedListMain {
 
         System.out.println("**********************************************************************");
     }
+
     public static void searchNode() {
         System.out.println("===============================UC7==============================\n");
 
@@ -142,6 +150,7 @@ public class LinkedListMain {
         linkedlist7.Display();
         System.out.println("**********************************************************************");
     }
+
     public static void insertingAfterElement() {
         System.out.println("\n==========================================UC8===================================\n");
 
@@ -157,6 +166,7 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
 
     }
+
     public static void deleteAndShowSize() {
         System.out.println("=====================================UC9==========================");
         Linkedlist<Integer> linkedlist8 = new Linkedlist<>();
@@ -173,6 +183,22 @@ public class LinkedListMain {
         linkedlist8.size();
 
         System.out.println("**********************************************************************");
+
+    }
+        public static void sortAccendingOrder() {
+
+        System.out.println("=====================================UC10==========================");
+
+        Linkedlist<Integer> linkedlist9 = new Linkedlist<>();
+        linkedlist9.append(56);
+        linkedlist9.append(30);
+        linkedlist9.append(40);
+        linkedlist9.append(70);
+        linkedlist9.sortList();
+
+        //print linked list
+        System.out.println("Linked list in ascending order after sorting: ");
+        linkedlist9.Display();
 
     }
 
