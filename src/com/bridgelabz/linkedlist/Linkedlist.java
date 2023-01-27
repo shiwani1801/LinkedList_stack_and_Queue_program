@@ -71,6 +71,20 @@ public class Linkedlist<T> {
         return tempNode.key;
     }
     /**
+     * Method to search for given data to linkedlist
+     */
+    public Node<T> search(T data) {
+        Node<T> tempNode = head;
+        while (tempNode != null) {
+            if (tempNode.key == data) {
+                System.out.println("Key found" + data);
+                break;
+            }
+            tempNode = tempNode.next;
+        }
+        return tempNode;
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {

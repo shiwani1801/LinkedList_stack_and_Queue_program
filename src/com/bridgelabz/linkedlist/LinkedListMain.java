@@ -28,7 +28,6 @@ public class LinkedListMain {
         linkedlist1.Display();
         System.out.println("***************************************************************");
     }
-
     public static void addingElements() {
         System.out.println("\n==============================UC2============================");
 
@@ -49,7 +48,6 @@ public class LinkedListMain {
         linkedlist2.Display();
         System.out.println("********************************************************************");
     }
-
     public static void appendingTheElements() { // new element gets added at the end
         System.out.println("\n==============================UC3============================");
         Linkedlist<Integer> linkedlist3 = new Linkedlist<>();
@@ -68,7 +66,6 @@ public class LinkedListMain {
         linkedlist3.Display();
         System.out.println("**********************************************************************");
     }
-
     public static void insertingData() {
         System.out.println("\n=================UC4==================");
 
@@ -87,7 +84,6 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
 
     }
-
     public static void popFirstData() {//input 56,30,70
         System.out.println("================== UC5 ==================");
 
@@ -108,7 +104,6 @@ public class LinkedListMain {
         linkedlist5.Display();
         System.out.println("**********************************************************************");
     }
-
     public static void popLastData() {//input 56,30,70
         System.out.println("================== UC6==================");
 
@@ -133,4 +128,20 @@ public class LinkedListMain {
 
         System.out.println("**********************************************************************");
     }
+    public static void searchNode() {
+        System.out.println("===============================UC7==============================\n");
+
+        Linkedlist<Integer> linkedlist7 = new Linkedlist<>();
+        linkedlist7.append(56);
+        linkedlist7.append(30);
+        linkedlist7.append(70);
+
+        System.out.println("searching for key 30 :");
+        linkedlist7.search(30);
+        linkedlist7.Display();
+        System.out.println("**********************************************************************");
+    }
+
+
+
 }
