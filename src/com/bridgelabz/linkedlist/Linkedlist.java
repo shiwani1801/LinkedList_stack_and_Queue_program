@@ -49,6 +49,17 @@ public class Linkedlist<T> {
         prevNode.next = newNode;
     }
     /**
+     * Method to delete 1st node from linkedlist
+     */
+    public T pop() {
+        if (head == null) {
+            return null;
+        }
+        Node<T> tempNode = head;
+        head = head.next;
+        return tempNode.key;
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {

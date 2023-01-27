@@ -7,6 +7,7 @@ public class LinkedListMain {
         addingElements();
         appendingTheElements();
         insertingData();
+        popFirstData();
     }
 
     public static void createSimpleLinkedList() {
@@ -82,6 +83,27 @@ public class LinkedListMain {
         System.out.println("**********************************************************************");
 
     }
+    public static void popFirstData() {//input 56,30,70
+        System.out.println("================== UC5 ==================");
+
+        Linkedlist<Integer> linkedlist5 = new Linkedlist<>();
+        linkedlist5.append(56);
+        System.out.println("after append 56");
+        linkedlist5.Display();
+        linkedlist5.append(30);
+        System.out.println("after append 30");
+        linkedlist5.Display();
+        linkedlist5.append(70);
+        System.out.println("after append 70");
+        linkedlist5.Display();
+        System.out.println("data is : ");
+        linkedlist5.Display();
+        System.out.println("required output sequence (after deleting first element ) ==> 30,70");
+        System.out.println("Pop value is : " + linkedlist5.pop());
+        linkedlist5.Display();
+        System.out.println("**********************************************************************");
+    }
+
 
 
 }
