@@ -5,6 +5,7 @@ public class LinkedListMain {
 
         createSimpleLinkedList();
         addingElements();
+        appendingTheElements();
     }
 
     public static void createSimpleLinkedList() {
@@ -44,8 +45,23 @@ public class LinkedListMain {
         linkedlist2.Display();
         System.out.println("********************************************************************");
     }
+    public static void appendingTheElements() { // new element gets added at the end
+        System.out.println("\n==============================UC3============================");
+        Linkedlist<Integer> linkedlist3 = new Linkedlist<>();
 
-
-
+        linkedlist3.append(56);
+        System.out.println("after append 56");
+        linkedlist3.Display();
+        linkedlist3.append(30);
+        System.out.println("after append 30");
+        linkedlist3.Display();
+        linkedlist3.append(70);
+        System.out.println("after append 70");
+        linkedlist3.Display();
+        System.out.println("while appending, the new elements will get added to the end position" +
+                "\nso required output is ====> 56,30,70");
+        linkedlist3.Display();
+        System.out.println("**********************************************************************");
+    }
 
 }

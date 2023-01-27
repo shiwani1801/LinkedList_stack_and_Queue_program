@@ -26,6 +26,19 @@ public class Linkedlist<T> {
         }
     }
     /**
+     * Method to append the newnode to linkedlist
+     */
+    public void append(T key) {
+        Node<T> newNode = new Node(key);
+        if (head == null) {
+            head = newNode;
+            tail = newNode;
+        } else {
+            tail.next = newNode;
+            tail = newNode;
+        }
+    }
+    /**
      * Method to display the linkedlist
      */
     public void Display () {
