@@ -24,6 +24,16 @@ public class Queue<T>
             tail = newNode;
         }
     }
+    /**
+     * Method to delete first element form the queue
+     */
+    public T deQueue()
+    {
+        QueueNode<T> tempNode = head;
+        head = head.next;
+        return tempNode.data;
+
+    }
 
     /**
      * Method to check stack is empty or not

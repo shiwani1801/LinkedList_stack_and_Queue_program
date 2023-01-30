@@ -14,6 +14,21 @@ public class QueueMain {
         System.out.println("after enque 70");
         newQueue.printQueue();
 
+        System.out.println("=====================================uc4==========================");
 
+        newQueue.deQueue();  //delete the first element of queue
+        System.out.println("after deleting 1st element 56 \n ");
+        newQueue.printQueue();
+        newQueue.isEmpty();
+        System.out.println("........................................................");
+        newQueue.deQueue();  //delete the 2nd element of queue
+        System.out.println("after deleting 2nd element 30 \n ");
+        newQueue.printQueue();
+        newQueue.isEmpty();
+        System.out.println("........................................................");
+        newQueue.deQueue();  //delete the 3rd element of queue
+        System.out.println("after deleting 3rd element 70\n ");
+
+        newQueue.isEmpty();
     }
 }
